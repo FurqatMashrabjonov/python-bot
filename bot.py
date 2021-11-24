@@ -7,7 +7,7 @@ import datetime
 from aiogram.types import ReplyKeyboardMarkup, ReplyKeyboardRemove, KeyboardButton
 
 API_TOKEN = '2084331966:AAFi4UzSvFk9jfErr4jDVe31UucPPAsYqaY'
- 
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
@@ -26,7 +26,10 @@ async def you_info(message:types.Message):
 
 @dp.message_handler(commands='start')
 async def send_welcome(message: types.Message):
+
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
     """
+
     This handler will be called when user sends `/start` or  command
     """
     id = {
