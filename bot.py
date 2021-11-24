@@ -88,6 +88,23 @@ async def send_welcom(message: types.Message):
 
     await message.reply(helps)
 
+
+
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+   print('iwlayaptiiiiiiiiiiiiiiiiiii')
+
+
+
 @dp.message_handler()
 async def handle(message):
     users = f"{message['from']['id']}\n{message['from']['first_name']} \n" \
