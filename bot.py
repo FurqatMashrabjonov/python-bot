@@ -1,10 +1,12 @@
 
 from functions import (fromHextoDec, fromBintoDec, fromHextoBin, fromDectoBin, fromDectoHex, fromBintoHex, fromRimtoDec, fromDectoRim)
-
+import os
 import logging
 from aiogram import Bot, Dispatcher, executor, types
 import datetime
 from aiogram.types import ReplyKeyboardMarkup, ReplyKeyboardRemove, KeyboardButton
+
+PORT = int(os.environ.get('PORT', 5000))
 
 API_TOKEN = '2084331966:AAFi4UzSvFk9jfErr4jDVe31UucPPAsYqaY'
 
@@ -140,6 +142,11 @@ async def handle(message):
     if res != '':
         await message.reply(res)
 
+
+executor.start_webhook(listen="0.0.0.0",
+                          port=int(PORT),
+                          url_path=API_TOKEN)
+    executor.bot.setWebhook('https://python-bot12.herokuapp.com/' + API_TOKEN)
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
